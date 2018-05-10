@@ -85,6 +85,23 @@ namespace GroupDocs.Viewer.Examples.CSharp
             //Render MS Project document as Html with PorjectOptions
             //ViewGenerator.RenderProjectDocumentAsHtmlWithProjectOptions("sample.mpp");
 
+            //Render document with default font setting
+            //ViewGenerator.RenderDocumentAsHtmlWithDefaultFontSetting("sample.pdf");
+
+            //Render specific layers of Cad document
+            //ViewGenerator.RenderSpecificLayerOfCadDocument("sample.dwg");
+
+            //Render Presentation document containing slide notes
+            //ViewGenerator.RenderPresentationDocumentWithNotes("sample.pptx");
+
+            //Render Excel document as HTML with print area only settings
+            //ViewGenerator.RenderPrintAreaOnlyInExcel("sample.xlsx");
+
+            //Render hidden columns and rows in Excel document
+            //ViewGenerator.RenderHiddenContentInExcel("sample.xlsx");
+
+            //Set header fields' labels when rendering email messages
+            //ViewGenerator.SetFieldLabelsWhenRenderingEmailMessage("sample.msg");
             #endregion
 
             #region ViewerImagePresentation
@@ -115,6 +132,15 @@ namespace GroupDocs.Viewer.Examples.CSharp
 
             //Render MS Project document as Image with PorjectOptions
             //ViewGenerator.RenderProjectDocumentAsImageWithProjectOptions("sample.mpp");
+
+            //Render Excel document as image with print area only settings
+            //ViewGenerator.RenderPrintAreaOnlyAsImageInExcel("sample.xlsx");
+
+            //Render hidden columns and rows in Excel document
+            //ViewGenerator.RenderHiddenContentInExcelAsImage("sample.xlsx");
+
+            //Render email messages with page size settings
+            ViewGenerator.RenderEmailDocumentAsImageWithPageSizeSettings("sample.msg");
             #endregion
 
             #region GeneralRepresentation
@@ -130,16 +156,29 @@ namespace GroupDocs.Viewer.Examples.CSharp
             //Render document as PDF with comments
             //ViewGenerator.RenderDocumentWithCommentsAsPDF("sample.doc");
 
+            //Render Excel document as PDF with print area only settings
+            //ViewGenerator.RenderPrintAreasInExcelAsPDF("sample.xlsx");
 
             //Render MS Project document as PDF with PorjectOptions
             //ViewGenerator.RenderProjectDocumentAsPDFWithProjectOptions("sample.mpp");
+
+            //Render hidden columns and rows in Excel document
+            //ViewGenerator.RenderHiddenContentInExcelAsPDF("sample.xlsx");
+
+            //Render email messages with page size settings
+            //ViewGenerator.RenderEmailDocumentAsPDFWithPageSizeSettings("sample.msg");
+
             #endregion
 
             #region InputDataHandlers
             //Render a document from Azure Storage 
             //ViewGenerator.RenderDocFromAzure("word.doc");
+
             //Render a document from ftp location 
             //ViewGenerator.RenderDocFromAzure("word.doc");
+
+            //Render document from Amazon S3 file storage
+            //ViewGenerator.GetHtmlPagesFromAmazonS3FileStorage("sample.doc", "your-bucket-name");
             #endregion
 
             #region OtherImprovements
@@ -176,6 +215,10 @@ namespace GroupDocs.Viewer.Examples.CSharp
 
             //Get document info by stream
             //ViewGenerator.GetDocumentInfoByStream("word.doc"); 
+
+            //Get layers' info in Cad document
+            //ViewGenerator.GetLayersInfoForCadDcouments("sample.dwg");
+
             #endregion
 
             #region EmailAttachments

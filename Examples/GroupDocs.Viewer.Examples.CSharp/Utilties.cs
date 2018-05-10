@@ -37,7 +37,7 @@ namespace GroupDocs.Viewer.Examples
             //set the storage path
             config.StoragePath = StoragePath;
             //Uncomment the below line for cache purpose
-            config.UseCache = true;
+            config.EnableCaching = true;
             config.CacheFolderName = "cachefolder";
             return config;
             //ExEnd:Configurations
@@ -57,8 +57,6 @@ namespace GroupDocs.Viewer.Examples
             config.StoragePath = StoragePath;
             //Uncomment the below line for cache purpose
             //config.UseCache = true;
-            //Set default font name
-            config.DefaultFontName = DefaultFontName;
             return config;
             //ExEnd:ConfigurationsWithDefaultFontName
 
